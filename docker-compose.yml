@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  travel-diary-server:
+    build: ./
+    container_name: travel-diary-server
+    ports:
+      - "8082:8082"
+      - "5005:5005"
+    environment:
+      SERVER_PORT: "8082"
+
+  travel-diary-mongo:
+    image: mongo:4.4.18
+    container_name: travel-diary-mongo
+    ports:
+      - "27017:27017"

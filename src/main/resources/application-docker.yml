@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/post
+      port: 27017
+      host: travel-diary-mongo
